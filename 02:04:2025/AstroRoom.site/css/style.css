@@ -1,0 +1,261 @@
+/* Global Styles */
+:root {
+    --primary-color: #3a6ea5;
+    --secondary-color: #004e98;
+    --dark-color: #192841;
+    --light-color: #f4f7f9;
+    --gray-color: #e9ecef;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.navbar-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--gray-color);
+    padding: 5rem 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image-placeholder {
+    background-color: #192841;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Feature Cards */
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem 0;
+}
+
+.cta-section h2 {
+    margin-bottom: 1rem;
+}
+
+.cta-section .btn {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.cta-section .btn:hover {
+    background-color: var(--light-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color) !important;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+footer a {
+    color: white;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+    color: white;
+}
+
+/* Form Styles */
+.form-control {
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* About Page */
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+/* Services Page */
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.service-img {
+    height: 200px;
+    background-color: var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.service-content {
+    padding: 2rem;
+}
+
+/* Contact Page */
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+    width: 40px;
+    text-align: center;
+}
+
+/* Cookie Consent */
+.cookie-consent {
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    .hero-image-placeholder {
+        margin-top: 2rem;
+    }
+
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .service-img {
+        height: 150px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-section, .features, .cta-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* For ad optimization */
+.ad-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 2rem 0;
+    text-align: center;
+    min-height: 90px;
+    background-color: var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
