@@ -5,40 +5,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Navigation
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileMenu = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
     
     if (mobileMenu) {
         mobileMenu.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            
-            // Toggle menu button appearance
-            const bars = mobileMenu.querySelectorAll('.bar');
-            if (navMenu.classList.contains('active')) {
-                bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                bars[1].style.opacity = '0';
-                bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-            } else {
-                bars[0].style.transform = 'none';
-                bars[1].style.opacity = '1';
-                bars[2].style.transform = 'none';
-            }
+            mobileNav.classList.toggle('active');
         });
     }
     
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (navMenu && navMenu.classList.contains('active') && 
-            !e.target.closest('.nav-menu') && 
-            !e.target.closest('#mobile-menu')) {
-            navMenu.classList.remove('active');
+        if (mobileNav && mobileNav.classList.contains('active') && 
+            !e.target.closest('.mobile-nav') && 
+            !e.target.closest('.mobile-menu-toggle')) {
+            mobileNav.classList.remove('active');
             if (mobileMenu) {
                 mobileMenu.classList.remove('active');
-                const bars = mobileMenu.querySelectorAll('.bar');
-                bars[0].style.transform = 'none';
-                bars[1].style.opacity = '1';
-                bars[2].style.transform = 'none';
             }
         }
     });
@@ -156,14 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 
                 // Close mobile menu if open
-                if (navMenu && navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
+                if (mobileNav && mobileNav.classList.contains('active')) {
+                    mobileNav.classList.remove('active');
                     if (mobileMenu) {
                         mobileMenu.classList.remove('active');
-                        const bars = mobileMenu.querySelectorAll('.bar');
-                        bars[0].style.transform = 'none';
-                        bars[1].style.opacity = '1';
-                        bars[2].style.transform = 'none';
                     }
                 }
             }
@@ -235,4 +215,103 @@ document.addEventListener('DOMContentLoaded', () => {
             animationObserver.observe(el);
         });
     }
+    
+    // Cookie Consent Banner
+    const setupCookieConsent = () => {
+        // Check if user has already accepted cookies
+        const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+        
+        if (!cookiesAccepted) {
+            // Create cookie consent banner
+            const cookieBanner = document.createElement('div');
+            cookieBanner.className = 'cookie-banner';
+            cookieBanner.innerHTML = `
+                <div class="cookie-content">
+                    <p>We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
+                    <div class="cookie-actions">
+                        <a href="legal/privacy-policy.html" class="cookie-link">Learn more</a>
+                        <button id="accept-cookies" class="cookie-button">Accept</button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(cookieBanner);
+            
+            // Add styles for the banner
+            const style = document.createElement('style');
+            style.textContent = `
+                .cookie-banner {
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(46, 125, 50, 0.95);
+                    color: #fff;
+                    padding: 1rem;
+                    z-index: 1000;
+                    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                }
+                .cookie-content {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                .cookie-content p {
+                    flex: 1;
+                    margin: 0;
+                    padding-right: 1rem;
+                }
+                .cookie-actions {
+                    display: flex;
+                    align-items: center;
+                }
+                .cookie-link {
+                    color: #fff;
+                    text-decoration: underline;
+                    margin-right: 1rem;
+                }
+                .cookie-button {
+                    background-color: #fff;
+                    color: #2e7d32;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    transition: background-color 0.3s ease;
+                }
+                .cookie-button:hover {
+                    background-color: #f1f1f1;
+                }
+                @media (max-width: 768px) {
+                    .cookie-content {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    .cookie-content p {
+                        margin-bottom: 1rem;
+                        padding-right: 0;
+                    }
+                    .cookie-actions {
+                        justify-content: center;
+                        width: 100%;
+                    }
+                }
+            `;
+            
+            document.head.appendChild(style);
+            
+            // Add event listener to the accept button
+            document.getElementById('accept-cookies').addEventListener('click', () => {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.style.display = 'none';
+            });
+        }
+    };
+    
+    // Initialize cookie consent
+    setupCookieConsent();
 }); 
