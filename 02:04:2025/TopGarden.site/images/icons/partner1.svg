@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .dark { fill: #2e7d32; }
+    .light { fill: #81c784; }
+  </style>
+  <rect width="180" height="80" x="10" y="10" rx="10" ry="10" fill="#f8f9f6" stroke="#2e7d32" stroke-width="2"/>
+  <g transform="translate(20,55)">
+    <path class="dark" d="M0,0 L10,-20 L20,0 Z" />
+    <path class="light" d="M25,-5 L30,-15 L35,-5 Z" />
+    <path class="dark" d="M40,-10 L42,-15 L44,-10 Z" />
+    <text x="55" y="0" class="text dark" font-size="16">Green Roof Association</text>
+  </g>
+</svg> 

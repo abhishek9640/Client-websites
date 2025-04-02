@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <style>
+    .text { font-family: 'Arial', sans-serif; font-weight: bold; }
+    .dark { fill: #2e7d32; }
+    .light { fill: #81c784; }
+  </style>
+  <g transform="translate(10,40)">
+    <path class="dark" d="M0,0 L15,-30 L30,0 Z" />
+    <path class="light" d="M35,-5 L45,-25 L55,-5 Z" />
+    <path class="dark" d="M60,-15 L65,-25 L70,-15 Z" />
+    <text x="80" y="0" class="text dark" font-size="24">TopGarden</text>
+  </g>
+</svg> 
