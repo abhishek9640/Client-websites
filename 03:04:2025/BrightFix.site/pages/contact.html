@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact BrightFix - Get in touch for professional lighting installation services">
+    <title>Contact Us | BrightFix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Preconnect to common domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background: url('/images/contact.webp') no-repeat center center/cover;
+            color: white; /* Ensures text visibility */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">BrightFix</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 text-center">
+                        <h1>Contact Us</h1>
+                        <p class="lead">Get in touch for professional lighting solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <h2>Send Us a Message</h2>
+                        <p class="mb-4">Fill out the form below, and we'll get back to you within 24 hours.</p>
+                        
+                        <form id="contactForm" action="#" method="post" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name*</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name*</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address*</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="serviceType" class="form-label">Service of Interest*</label>
+                                <select class="form-select" id="serviceType" name="serviceType" required>
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="residential">Residential Lighting</option>
+                                    <option value="commercial">Commercial Lighting</option>
+                                    <option value="smartHome">Smart Home Lighting</option>
+                                    <option value="energyEfficiency">Energy Efficiency Upgrades</option>
+                                    <option value="maintenance">Maintenance & Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a service.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message*</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="privacyConsent" name="privacyConsent" required>
+                                <label class="form-check-label" for="privacyConsent">I agree to the <a href="privacy.html">Privacy Policy</a>*</label>
+                                <div class="invalid-feedback">
+                                    You must agree to our Privacy Policy.
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="col-lg-4 offset-lg-1">
+                        <h2>Contact Information</h2>
+                        <p class="mb-4">Reach out to us directly using the following information:</p>
+                        
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <h5>Phone</h5>
+                                <p class="mb-0"><a href="tel:+18001234567">+1 2052219149 </a></p>
+                                <p class="text-muted small">Mon-Fri: 8am-6pm (EST)</p>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5>Email</h5>
+                                <p class="mb-0"><a href="mailto:info@brightfix.site">info@brightfix.site</a></p>
+                                <p class="text-muted small">We'll respond within 24 hours</p>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5>Headquarters</h5>
+                                <address class="mb-0">
+                                    901a 4th Ave S,<br>
+                                    Jasper<br>
+                                    AL 35501<br>
+                                    USA
+                                </address>
+
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h5>Service Areas</h5>
+                                <p>We provide professional lighting installation services nationwide, with specialized teams in the following regions:</p>
+                                <ul>
+                                    <li>Northeast</li>
+                                    <li>Southeast</li>
+                                    <li>Midwest</li>
+                                    <li>Southwest</li>
+                                    <li>West Coast</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>BrightFix</h5>
+                    <p>Professional lighting installation services across the USA.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light">About Us</a></li>
+                        <li><a href="services.html" class="text-light">Services</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="terms.html" class="text-light">Terms & Conditions</a></li>
+                        <li><a href="privacy.html" class="text-light">Privacy Policy</a></li>
+                        <li><button id="cookieConsentBtn" class="btn btn-sm btn-outline-light mt-2">Cookie Settings</button></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 bg-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 BrightFix. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <p class="mb-md-0">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <button id="acceptCookies" class="btn btn-sm btn-primary">Accept</button>
+                    <button id="rejectCookies" class="btn btn-sm btn-outline-secondary ms-2">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            
+            // Fetch all forms that need validation
+            var forms = document.querySelectorAll('.needs-validation');
+            
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        // For demo purposes - prevent actual form submission and show success message
+                        event.preventDefault();
+                        form.classList.add('was-validated');
+                        
+                        // Simulate form submission
+                        const submitButton = form.querySelector('button[type="submit"]');
+                        const originalText = submitButton.textContent;
+                        
+                        submitButton.disabled = true;
+                        submitButton.textContent = 'Sending...';
+                        
+                        setTimeout(function() {
+                            form.style.display = 'none';
+                            document.querySelector('.col-lg-7').insertAdjacentHTML(
+                                'beforeend',
+                                '<div class="alert alert-success mt-4" role="alert">' +
+                                '<h4 class="alert-heading">Message Sent!</h4>' +
+                                '<p>Thank you for contacting BrightFix. We have received your message and will get back to you within 24 hours.</p>' +
+                                '</div>'
+                            );
+                        }, 1500);
+                    }
+                    
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html> 

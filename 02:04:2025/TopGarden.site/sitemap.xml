@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>https://www.topgarden.site/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.topgarden.site/about.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.topgarden.site/services.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.topgarden.site/contact.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.topgarden.site/legal/terms.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.topgarden.site/legal/privacy-polocy.html</loc>
+        <priority>0.7</priority>
+    </url>
+</urlset>
