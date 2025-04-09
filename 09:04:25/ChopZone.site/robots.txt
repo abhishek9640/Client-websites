@@ -1,0 +1,17 @@
+# robots.txt for ChopZone.site
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /terms.html
+Allow: /privacy.html
+Allow: /images/
+Allow: /style.css
+Allow: /script.js
+
+# Sitemap location
+Sitemap: https://chopzone.site/sitemap.xml
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 10 

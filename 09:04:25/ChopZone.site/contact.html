@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - ChopZone.site</title>
+    <meta
+      name="description"
+      content="Contact ChopZone.site for all your tree cutting and removal needs. Request a free quote today."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h1 class="logo">ChopZone.site</h1>
+            <p class="tagline">Reliable Tree Cutting & Removal Services</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Intro -->
+    <section class="contact-intro py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact Us</h2>
+        <p class="lead">
+          Have questions or ready to schedule a service? Get in touch with our
+          team today.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Information and Form -->
+    <section class="contact-section py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-lg-8 mb-5 mb-lg-0">
+            <div class="contact-form-container p-4 bg-white rounded shadow-sm">
+              <h3 class="mb-4">Send Us a Message</h3>
+              <form id="contactForm" action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name*</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone (Optional)</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="service" class="form-label">Service Needed</label>
+                  <select class="form-select" id="service" name="service">
+                    <option value="" selected>Select a service...</option>
+                    <option value="Tree Cutting">
+                      Tree Cutting & Trimming
+                    </option>
+                    <option value="Stump Grinding">Stump Grinding</option>
+                    <option value="Emergency Removal">
+                      Emergency Tree Removal
+                    </option>
+                    <option value="Land Clearing">Land Clearing</option>
+                    <option value="Other">Other (Please specify)</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message*</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-lg-4">
+            <div class="contact-info p-4 bg-white rounded shadow-sm mb-4">
+              <h3 class="mb-4">Our Information</h3>
+              <div class="mb-3">
+                <h4>Address</h4>
+                <p>Dawes County <br />Nebraska USA</p>
+              </div>
+              <div class="mb-3">
+                <h4>Phone</h4>
+                <p><a href="tel:+15551234567">+1 4257715343 </a></p>
+              </div>
+              <div class="mb-3">
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:info@chopzone.site">info@chopzone.site</a>
+                </p>
+              </div>
+              <div class="mb-3">
+                <h4>Business Hours</h4>
+                <p>
+                  Monday - Friday: 8:00 AM - 6:00 PM<br />
+                  Saturday: 9:00 AM - 4:00 PM<br />
+                  Sunday: Closed<br />
+                  <em>24/7 Emergency Service Available</em>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p>&copy; 2025 ChopZone.site. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="cookie-consent">
+      <p>
+        This website uses cookies to ensure you get the best experience on our
+        website.
+      </p>
+      <button id="accept-cookies" class="btn btn-sm btn-primary">Accept</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

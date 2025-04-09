@@ -1,0 +1,341 @@
+/* 
+* ChopZone.site - Tree Cutting Service Website
+* Main Stylesheet
+*/
+
+/* Global Styles */
+:root {
+    --primary-color: #2c7a34;  /* Forest Green */
+    --secondary-color: #6c757d; /* Gray */
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1d5324;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1d5324;
+    border-color: #1d5324;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Header Styles */
+.site-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 5rem 0;
+    background-color: var(--light-color);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--dark-color);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Service Images */
+.service-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.service-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Service Cards */
+.service-card {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Service Features */
+.service-features {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.service-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Image Placeholders */
+.image-placeholder, .banner-placeholder, .map-placeholder {
+    background-color: #e9ecef;
+    border: 1px dashed #adb5bd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.banner-placeholder {
+    min-height: 100px;
+}
+
+.placeholder-text {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* About Page */
+.about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.02);
+}
+
+.mission-card {
+    background-color: rgba(44, 122, 52, 0.05);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.feature-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form-container, .contact-info {
+    height: 100%;
+}
+
+/* Terms & Privacy Pages */
+.terms-content h3, .privacy-content h3 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* Cookie Consent */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-consent.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-consent p {
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-links {
+        flex-direction: column;
+    }
+    
+    .footer-links li {
+        margin-right: 0;
+    }
+    
+    .cookie-consent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cookie-consent p {
+        margin-bottom: 1rem;
+    }
+    
+    .service-section .row {
+        text-align: center;
+    }
+    
+    .service-features li {
+        text-align: left;
+    }
+} 
