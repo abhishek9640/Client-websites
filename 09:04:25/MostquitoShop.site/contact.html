@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact MosquitoStop.site for mosquito control services. Schedule a free inspection or get a quote for residential and commercial mosquito treatments."
+    />
+    <title>Contact Us | MosquitoStop.site</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            height="200"
+            width="150"
+            alt="MosquitoStop.site Logo"
+          />
+          <div class="logo-text"></div>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero" style="background-image: url('images/service4.jpg')">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Contact Us</h1>
+          <p class="hero-tagline">
+            Get in touch with our team for mosquito control solutions
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-container">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>
+              Have questions about our services or want to schedule a free
+              inspection? Contact us using the form or reach out directly
+              through the information below.
+            </p>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3>Our Location</h3>
+                <p>Broken Bow Nebraska<br />68822 USA</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h3>Phone</h3>
+                <p>
+                  Call us at <a href="tel:+18005551234">+1 4257715343 </a><br />
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:info@mosquitostop.site"
+                    >info@mosquitostop.site</a
+                  ><br />
+                  <a href="mailto:support@mosquitostop.site"
+                    >support@mosquitostop.site</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h3>Business Hours</h3>
+                <p>
+                  Monday - Friday: 8:00 AM - 6:00 PM<br />
+                  Saturday: 9:00 AM - 2:00 PM<br />
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2 class="section-title">Send Us a Message</h2>
+            <form id="contactForm" action="#" method="POST">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Service of Interest</label>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="residential"
+                      name="service"
+                      value="residential"
+                    />
+                    <label for="residential">Residential</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="commercial"
+                      name="service"
+                      value="commercial"
+                    />
+                    <label for="commercial">Commercial</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="larvae"
+                      name="service"
+                      value="larvae"
+                    />
+                    <label for="larvae">Larvae Management</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="fogging"
+                      name="service"
+                      value="fogging"
+                    />
+                    <label for="fogging">Fogging/Barrier Sprays</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--gray)">
+      <div class="container text-center">
+        <h2 class="section-title text-center">Book a Visit</h2>
+        <p>
+          Ready to schedule a free inspection? Contact us now to set up an
+          appointment with one of our mosquito control specialists.
+        </p>
+        <div style="margin-top: var(--spacing-md)">
+          <a href="tel:+18005551234" class="btn btn-primary"
+            >Call 1-800-555-1234</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <div class="logo-text">MosquitoStop.site</div>
+          <p>Smart & Safe Mosquito Control Solutions</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          MosquitoStop.site. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent">
+      <div class="cookie-text">
+        <p>
+          We use cookies to enhance your experience on our website. By
+          continuing to browse, you agree to our use of cookies.
+        </p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="btn btn-secondary accept-cookies">Accept</button>
+      </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
