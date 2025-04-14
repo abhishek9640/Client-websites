@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40">
+  <g>
+    <!-- Background shape with gradient -->
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="url(#gradient)" />
+    
+    <!-- Spray Icon -->
+    <path d="M22,12 L25,8 C25.5,7.5 26.5,7.5 27,8 L27.5,8.5 C28,9 28,10 27.5,10.5 L26,12 L22,12 Z" fill="#ffffff"/>
+    <path d="M11.5,33 L14.5,24 L26,12 L22,12 L10,24 L10,30 C10,31.7 11.3,33 13,33 L11.5,33 Z" fill="#ffffff"/>
+    <path d="M13,25 C14.1,25 15,25.9 15,27 C15,28.1 14.1,29 13,29 C11.9,29 11,28.1 11,27 C11,25.9 11.9,25 13,25 Z" fill="#1e88e5"/>
+    
+    <!-- Text next to logo: WallClean -->
+    <text x="50" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333333">Wall<tspan fill="#1e88e5">Clean</tspan></text>
+    
+    <!-- .site text -->
+    <text x="123" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#757575"></text>
+  </g>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e88e5" />
+      <stop offset="100%" stop-color="#64b5f6" />
+    </linearGradient>
+  </defs>
+</svg> 

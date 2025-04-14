@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g>
+    <!-- Background shape with gradient -->
+    <rect x="0" y="0" width="32" height="32" rx="6" fill="#1e88e5" />
+    
+    <!-- Spray Icon -->
+    <path d="M18,10 L21,7 C21.5,6.5 22.5,6.5 23,7 L23.5,7.5 C24,8 24,9 23.5,9.5 L22,11 L18,11 Z" fill="#ffffff"/>
+    <path d="M9.5,25 L12.5,18 L22,11 L18,11 L8,18 L8,22 C8,23.7 9.3,25 11,25 L9.5,25 Z" fill="#ffffff"/>
+    <path d="M11,19 C12.1,19 13,19.9 13,21 C13,22.1 12.1,23 11,23 C9.9,23 9,22.1 9,21 C9,19.9 9.9,19 11,19 Z" fill="#ffffff"/>
+  </g>
+</svg> 

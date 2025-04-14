@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#e3f2fd"/>
+  
+  <!-- Wall with Graffiti -->
+  <rect x="30" y="40" width="140" height="120" rx="2" fill="#e0e0e0"/>
+  <rect x="30" y="40" width="140" height="120" rx="2" fill="url(#brickPattern)" opacity="0.7"/>
+  
+  <!-- Stylized Graffiti -->
+  <path d="M50,70 C60,60 75,65 85,75 S110,85 120,70 S135,60 140,70" 
+        stroke="#FF3D00" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M45,100 C55,90 70,95 80,105 S105,115 115,100 S130,90 135,100" 
+        stroke="#651FFF" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Spray Bottle -->
+  <g transform="translate(120, 140) rotate(-45)">
+    <rect x="-15" y="-30" width="30" height="50" rx="3" fill="#1e88e5"/>
+    <rect x="-10" y="-40" width="20" height="10" rx="2" fill="#0d47a1"/>
+    <rect x="-5" y="-50" width="10" height="10" rx="5" fill="#0d47a1"/>
+    <path d="M0,-50 L10,-65 L20,-60 L10,-45 L0,-50" fill="#64b5f6"/>
+  </g>
+  
+  <!-- Cleaning Cloth/Eraser -->
+  <rect x="40" y="130" width="50" height="20" rx="5" fill="#1565c0"/>
+  <rect x="40" y="130" width="50" height="5" rx="2" fill="#0d47a1"/>
+  
+  <!-- Cleaning Motion Lines -->
+  <path d="M90,120 L120,90" stroke="#64b5f6" stroke-width="2" stroke-dasharray="4,2"/>
+  <path d="M80,110 L110,80" stroke="#64b5f6" stroke-width="2" stroke-dasharray="4,2"/>
+  <path d="M70,120 L100,90" stroke="#64b5f6" stroke-width="2" stroke-dasharray="4,2"/>
+  
+  <!-- Circular Border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1e88e5" stroke-width="3"/>
+  
+  <!-- Patterns -->
+  <defs>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="20" height="10" patternTransform="rotate(0)">
+      <rect width="19" height="9" x="0.5" y="0.5" fill="#e0e0e0" stroke="#cccccc" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+</svg> 

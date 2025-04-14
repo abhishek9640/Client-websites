@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="auto">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f5f9ff"/>
+  
+  <!-- Wall Background -->
+  <rect x="0" y="150" width="800" height="250" fill="#e0e0e0"/>
+  <rect x="0" y="150" width="800" height="250" fill="url(#brickPattern)" opacity="0.7"/>
+  
+  <!-- Team Members (Silhouettes) -->
+  
+  <!-- Person 1 (Left) - Pressure Washing -->
+  <g transform="translate(150, 300)">
+    <!-- Body -->
+    <rect x="-25" y="-100" width="50" height="90" rx="10" fill="#1a237e"/>
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="20" fill="#FFA726"/>
+    <!-- Arms -->
+    <rect x="25" y="-90" width="60" height="15" rx="5" fill="#1a237e" transform="rotate(-10)"/>
+    <rect x="-85" y="-90" width="60" height="15" rx="5" fill="#1a237e" transform="rotate(10)"/>
+    <!-- Legs -->
+    <rect x="-20" y="-10" width="15" height="50" rx="5" fill="#0d47a1"/>
+    <rect x="5" y="-10" width="15" height="50" rx="5" fill="#0d47a1"/>
+    <!-- Pressure Washer Equipment -->
+    <rect x="25" y="-90" width="40" height="25" rx="3" fill="#424242"/>
+    <path d="M65,-80 L85,-60" stroke="#424242" stroke-width="4"/>
+    <path d="M85,-60 L95,-65 L110,-50" stroke="#424242" stroke-width="3"/>
+    <!-- Water Spray -->
+    <path d="M110,-50 L150,-20" stroke="#64b5f6" stroke-width="2" stroke-dasharray="2,2"/>
+    <circle cx="150" cy="-20" r="10" fill="#29b6f6" opacity="0.7"/>
+    <circle cx="155" cy="-25" r="5" fill="#29b6f6" opacity="0.5"/>
+    <circle cx="145" cy="-15" r="7" fill="#29b6f6" opacity="0.6"/>
+    <!-- Helmet -->
+    <path d="M-15,-135 C-20,-145 20,-145 15,-135" fill="#ffb74d"/>
+    <path d="M-15,-138 A20,10 0 0,1 15,-138" fill="#1565c0"/>
+  </g>
+  
+  <!-- Person 2 (Center) - Spray Bottle/Scrubbing -->
+  <g transform="translate(400, 300)">
+    <!-- Body -->
+    <rect x="-25" y="-100" width="50" height="90" rx="10" fill="#0d47a1"/>
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="20" fill="#FFB74D"/>
+    <!-- Arms -->
+    <rect x="25" y="-85" width="50" height="15" rx="5" fill="#0d47a1" transform="rotate(-30)"/>
+    <rect x="-30" y="-55" width="40" height="15" rx="5" fill="#0d47a1" transform="rotate(60)"/>
+    <!-- Legs -->
+    <rect x="-20" y="-10" width="15" height="50" rx="5" fill="#1565c0"/>
+    <rect x="5" y="-10" width="15" height="50" rx="5" fill="#1565c0"/>
+    <!-- Cleaning Supplies -->
+    <rect x="40" y="-80" width="15" height="30" rx="2" fill="#4CAF50"/>
+    <rect x="42" y="-85" width="10" height="5" rx="2" fill="#388E3C"/>
+    <path d="M55,-70 L65,-65" stroke="#388E3C" stroke-width="2"/>
+    <!-- Scrubbing Motion -->
+    <path d="M-40,-50 C-50,-55 -45,-65 -35,-60" stroke="#1565c0" stroke-width="3" fill="none" transform="rotate(20)"/>
+    <rect x="-45" y="-70" width="30" height="10" rx="3" fill="#90CAF9" transform="rotate(20)"/>
+    <!-- Hat/Visor -->
+    <path d="M-15,-130 A15,5 0 0,1 15,-130" fill="#0277BD"/>
+    <path d="M-12,-130 L0,-140 L12,-130" fill="#0277BD"/>
+  </g>
+  
+  <!-- Person 3 (Right) - Inspection/Supervisor -->
+  <g transform="translate(650, 300)">
+    <!-- Body -->
+    <rect x="-25" y="-100" width="50" height="90" rx="10" fill="#1565c0"/>
+    <!-- Head -->
+    <circle cx="0" cy="-120" r="20" fill="#FFCC80"/>
+    <!-- Arms -->
+    <rect x="25" y="-80" width="45" height="15" rx="5" fill="#1565c0" transform="rotate(-5)"/>
+    <rect x="-70" y="-80" width="45" height="15" rx="5" fill="#1565c0" transform="rotate(5)"/>
+    <!-- Legs -->
+    <rect x="-20" y="-10" width="15" height="50" rx="5" fill="#0d47a1"/>
+    <rect x="5" y="-10" width="15" height="50" rx="5" fill="#0d47a1"/>
+    <!-- Clipboard -->
+    <rect x="-60" y="-85" width="30" height="40" rx="2" fill="#E0E0E0"/>
+    <rect x="-55" y="-80" width="20" height="2" fill="#9E9E9E"/>
+    <rect x="-55" y="-75" width="20" height="2" fill="#9E9E9E"/>
+    <rect x="-55" y="-70" width="15" height="2" fill="#9E9E9E"/>
+    <!-- Pointing Gesture -->
+    <path d="M65,-75 L85,-40" stroke="#1565c0" stroke-width="3" fill="none"/>
+    <circle cx="65" cy="-75" r="5" fill="#FFCC80"/>
+    <!-- Hard Hat -->
+    <path d="M-20,-135 C-25,-150 25,-150 20,-135" fill="#FFC107"/>
+  </g>
+  
+  <!-- Cleaned Area Illustration -->
+  <g>
+    <!-- Partially cleaned wall with gradient transition -->
+    <defs>
+      <linearGradient id="cleanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#e0e0e0"/>
+        <stop offset="60%" stop-color="#ffffff"/>
+      </linearGradient>
+    </defs>
+    <rect x="100" y="200" width="600" height="150" fill="url(#cleanGradient)" opacity="0.7"/>
+    
+    <!-- Graffiti remains on left side -->
+    <g transform="translate(150, 250) scale(0.3)" opacity="0.8">
+      <path d="M20,100 C40,80 80,90 100,110 S160,140 200,120 S240,80 280,90" 
+            stroke="#FF3D00" stroke-width="15" fill="none" stroke-linecap="round"/>
+      <path d="M40,160 C60,140 100,150 120,170 S180,200 220,180" 
+            stroke="#651FFF" stroke-width="12" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="400" y="100" font-family="Arial" font-size="36" font-weight="bold" fill="#1a237e" text-anchor="middle">WallClean.site Team</text>
+  <text x="400" y="130" font-family="Arial" font-size="18" fill="#0d47a1" text-anchor="middle">Professional Graffiti Removal Experts</text>
+  
+  <!-- Patterns -->
+  <defs>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="40" height="20" patternTransform="rotate(0)">
+      <rect width="39" height="19" x="0.5" y="0.5" fill="#e0e0e0" stroke="#cccccc" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+</svg> 

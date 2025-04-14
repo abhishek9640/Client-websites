@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#ffebee"/>
+  
+  <!-- Wall Background -->
+  <rect x="40" y="40" width="120" height="120" rx="2" fill="#e0e0e0"/>
+  <rect x="40" y="40" width="120" height="120" rx="2" fill="url(#brickPattern)" opacity="0.5"/>
+  
+  <!-- Shield Overlay (Protective Layer) -->
+  <path d="M100,30 L140,50 L140,90 C140,125 125,145 100,170 C75,145 60,125 60,90 L60,50 Z" 
+        fill="url(#shieldGradient)" opacity="0.7"/>
+  
+  <!-- Shield Border -->
+  <path d="M100,30 L140,50 L140,90 C140,125 125,145 100,170 C75,145 60,125 60,90 L60,50 Z" 
+        fill="none" stroke="#d32f2f" stroke-width="2"/>
+  
+  <!-- Shield Inner Highlight -->
+  <path d="M100,40 L130,55 L130,90 C130,115 120,130 100,150 C80,130 70,115 70,90 L70,55 Z" 
+        fill="none" stroke="#ffffff" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Graffiti Spray (Deflected by Shield) -->
+  <g transform="translate(30, 70)">
+    <!-- Spray Can -->
+    <rect x="0" y="0" width="20" height="30" rx="3" fill="#9e9e9e"/>
+    <rect x="2" y="-5" width="16" height="5" rx="2" fill="#616161"/>
+    <rect x="7" y="-10" width="6" height="5" rx="1" fill="#616161"/>
+    
+    <!-- Spray -->
+    <path d="M25,0 L40,5 L55,-5 L45,-10" fill="#f44336" opacity="0.6"/>
+    <path d="M25,5 L45,12 L55,5 L35,-2" fill="#f44336" opacity="0.6"/>
+    <path d="M25,10 L50,15 L55,12 L40,5" fill="#f44336" opacity="0.6"/>
+  </g>
+  
+  <!-- Shield Reflection/Bounce Animation -->
+  <g transform="translate(100, 90)">
+    <!-- Shield Impact Highlight -->
+    <circle cx="0" cy="0" r="20" fill="url(#impactGradient)" opacity="0.7"/>
+    
+    <!-- Bounce/Deflection Lines -->
+    <path d="M0,0 L-30,-20" stroke="#d32f2f" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M0,0 L-25,0" stroke="#d32f2f" stroke-width="2" stroke-dasharray="2,2"/>
+    <path d="M0,0 L-30,20" stroke="#d32f2f" stroke-width="2" stroke-dasharray="2,2"/>
+  </g>
+  
+  <!-- Paint Roller (Application Tool) -->
+  <g transform="translate(160, 130) rotate(-45)">
+    <rect x="-5" y="0" width="10" height="30" rx="1" fill="#757575"/>
+    <rect x="-15" y="-15" width="30" height="15" rx="7" fill="#d32f2f"/>
+    <rect x="-13" y="-13" width="26" height="11" rx="5" fill="#ef9a9a"/>
+  </g>
+  
+  <!-- Circular Border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#d32f2f" stroke-width="3"/>
+  
+  <!-- Patterns and Gradients -->
+  <defs>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="20" height="10" patternTransform="rotate(0)">
+      <rect width="19" height="9" x="0.5" y="0.5" fill="#e0e0e0" stroke="#cccccc" stroke-width="0.5"/>
+    </pattern>
+    
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8bbd0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#d50000" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <radialGradient id="impactGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffcdd2" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+</svg> 

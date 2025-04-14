@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="auto">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f5f9ff"/>
+  
+  <!-- Split effect for before/after -->
+  <rect x="0" y="0" width="400" height="400" fill="#f0f0f0"/>
+  <line x1="400" y1="0" x2="400" y2="400" stroke="#1e88e5" stroke-width="4" stroke-dasharray="10,5"/>
+  
+  <!-- Wall texture base -->
+  <rect x="50" y="50" width="700" height="300" fill="#e0e0e0" rx="2" ry="2"/>
+  <rect x="50" y="50" width="700" height="300" fill="url(#brickPattern)" opacity="0.7" rx="2" ry="2"/>
+  
+  <!-- Graffiti on left side (before) -->
+  <g transform="translate(70, 100) scale(0.5)">
+    <!-- Stylized graffiti -->
+    <path d="M20,100 C40,80 80,90 100,110 S160,140 200,120 S240,80 280,90 S320,110 340,90" 
+          stroke="#FF3D00" stroke-width="15" fill="none" stroke-linecap="round"/>
+    <path d="M40,160 C60,140 100,150 120,170 S180,200 220,180 S260,140 300,150 S340,170 360,150" 
+          stroke="#651FFF" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M100,70 C120,50 160,60 180,80 S240,110 280,90 S320,50 360,60 S400,80 420,60" 
+          stroke="#00E676" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <text x="150" y="130" font-family="Arial" font-size="60" font-weight="bold" fill="#2962FF">TAG</text>
+  </g>
+  
+  <!-- "Before" label -->
+  <rect x="60" y="60" width="80" height="30" rx="15" fill="#333333"/>
+  <text x="100" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">BEFORE</text>
+  
+  <!-- Clean wall on right side (after) -->
+  <!-- Cleaning in progress illustration -->
+  <g transform="translate(500, 160)">
+    <!-- Spray equipment -->
+    <rect x="-20" y="-15" width="40" height="80" rx="5" fill="#1e88e5"/>
+    <circle cx="0" cy="-15" r="10" fill="#0d47a1"/>
+    <path d="M0,-5 L40,30" stroke="#0d47a1" stroke-width="4" fill="none"/>
+    <path d="M40,30 L70,-10 L90,10" stroke="#0d47a1" stroke-width="4" fill="none" stroke-linecap="round"/>
+    
+    <!-- Spray effect -->
+    <g opacity="0.7">
+      <circle cx="100" cy="5" r="3" fill="#64b5f6"/>
+      <circle cx="110" cy="0" r="2" fill="#64b5f6"/>
+      <circle cx="115" cy="8" r="2.5" fill="#64b5f6"/>
+      <circle cx="125" cy="2" r="2" fill="#64b5f6"/>
+      <circle cx="130" cy="10" r="1.5" fill="#64b5f6"/>
+      <circle cx="140" cy="5" r="1" fill="#64b5f6"/>
+    </g>
+    
+    <!-- Cleaning hand -->
+    <path d="M-10,60 C-5,70 5,65 10,60 S20,50 30,55 S45,65 50,60" fill="#FFA726"/>
+  </g>
+  
+  <!-- "After" label -->
+  <rect x="660" y="60" width="80" height="30" rx="15" fill="#1e88e5"/>
+  <text x="700" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AFTER</text>
+  
+  <!-- Company watermark -->
+  <text x="400" y="370" font-family="Arial" font-size="14" font-weight="bold" fill="#1a237e" text-anchor="middle">WallClean.site - Professional Graffiti Removal</text>
+  
+  <!-- Patterns -->
+  <defs>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="40" height="20" patternTransform="rotate(0)">
+      <rect width="39" height="19" x="0.5" y="0.5" fill="#e0e0e0" stroke="#cccccc" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+</svg> 

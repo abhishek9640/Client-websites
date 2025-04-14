@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="auto">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#e1f5fe"/>
+  
+  <!-- Wall Background -->
+  <rect x="30" y="30" width="140" height="140" rx="2" fill="#e0e0e0"/>
+  <rect x="30" y="30" width="140" height="140" rx="2" fill="url(#brickPattern)" opacity="0.5"/>
+  
+  <!-- Pressure Washer Handle -->
+  <rect x="85" y="120" width="30" height="50" rx="3" fill="#424242"/>
+  <rect x="95" y="110" width="10" height="15" rx="2" fill="#212121"/>
+  
+  <!-- Pressure Hose -->
+  <path d="M100,110 C80,100 70,80 80,60 C90,40 120,30 140,40" 
+        fill="none" stroke="#0277bd" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Pressure Washer Nozzle -->
+  <circle cx="100" cy="100" r="10" fill="#0277bd"/>
+  <path d="M100,90 L100,80" stroke="#01579b" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Water Spray Effect -->
+  <g opacity="0.8">
+    <!-- Main spray cone -->
+    <path d="M100,90 L80,50 L120,50 Z" fill="url(#waterGradient)"/>
+    
+    <!-- Water droplets -->
+    <circle cx="85" cy="60" r="2" fill="#29b6f6"/>
+    <circle cx="90" cy="45" r="2" fill="#29b6f6"/>
+    <circle cx="100" cy="40" r="2" fill="#29b6f6"/>
+    <circle cx="110" cy="45" r="2" fill="#29b6f6"/>
+    <circle cx="115" cy="60" r="2" fill="#29b6f6"/>
+    
+    <circle cx="80" cy="70" r="1.5" fill="#29b6f6"/>
+    <circle cx="95" cy="55" r="1.5" fill="#29b6f6"/>
+    <circle cx="105" cy="55" r="1.5" fill="#29b6f6"/>
+    <circle cx="120" cy="70" r="1.5" fill="#29b6f6"/>
+  </g>
+  
+  <!-- Clean Effect (Half-clean wall) -->
+  <path d="M30,100 L170,100" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,2"/>
+  <rect x="30" y="30" width="140" height="70" fill="url(#dirtyOverlay)" opacity="0.5"/>
+  
+  <!-- Circular Border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#0288d1" stroke-width="3"/>
+  
+  <!-- Patterns and Gradients -->
+  <defs>
+    <pattern id="brickPattern" patternUnits="userSpaceOnUse" width="20" height="10" patternTransform="rotate(0)">
+      <rect width="19" height="9" x="0.5" y="0.5" fill="#e0e0e0" stroke="#cccccc" stroke-width="0.5"/>
+    </pattern>
+    
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b3e5fc" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#29b6f6" stop-opacity="0.7"/>
+    </linearGradient>
+    
+    <pattern id="dirtyOverlay" patternUnits="userSpaceOnUse" width="10" height="10">
+      <rect width="10" height="10" fill="#757575" opacity="0.2"/>
+    </pattern>
+  </defs>
+</svg> 
