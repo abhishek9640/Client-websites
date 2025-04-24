@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cookies.html
+Disallow: /privacy.html
+Disallow: /terms.html
+
+Sitemap: https://renocave.site/sitemap.xml 
